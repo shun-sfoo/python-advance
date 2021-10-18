@@ -3,7 +3,7 @@ def triple():
     L = [1]
     while True:
         yield L
-        L = L + [0]
+        L = L + [0]  # 给每一行添加一个空位
         L = [L[i] + L[i - 1] for i in range(len(L))]
 
 
